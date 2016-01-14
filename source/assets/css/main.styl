@@ -1,0 +1,49 @@
+/*
+
+Theme Name: Static Site Scaffold
+Version: 1.1
+Author: Ivan Cruz
+Author URI: http://shiftsave.com
+
+*/
+
+
+/*  Variables
+ * -------------------------------------------------------- */
+
+//Ease
+$ease = cubic-bezier(0.650, 0, 0.000, 1)
+
+// Colors
+$slate    = #000
+$stingray = #B8B8B8
+$concrete = #EAEAEA
+
+// Fonts
+$headline-font = 'GalanoGrotesque-SemiBold', sans-serif
+$subheadline-font = 'GalanoGrotesque-Medium', sans-serif
+$body-font = 'GalanoGrotesque-Medium', sans-serif
+
+// Breakpoints
+$xl-desktop = 1400px
+$lg-desktop = 1200px
+$desktop = 1000px
+$tablet = 700px
+$phone = 400px
+
+// Padding & Spacing
+$lg-padding = 60px
+$sm-padding = 20px
+
+
+/*  Imports
+ * -------------------------------------------------------- */
+
+@import '_reset'
+@import '_mixins'
+@import '_fonts'
+@import '_base'
+
+@import '_header'
+@import '_footer'
+@import '_homepage'

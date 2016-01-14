@@ -1,0 +1,100 @@
+
+/* Base Styles
+--------------------------------------------- */
+
+html
+  -webkit-text-size-adjust 100%
+  -webkit-font-smoothing: antialiased
+  box-sizing border-box
+
+*, *:before, *:after
+  box-sizing inherit
+
+body
+  font-family $body-font
+  line-height 1.5em
+  text-rendering  optimizeLegibility
+
+h1, h2, h3, h4, h5
+  color $slate
+  font-family $headline-font
+  line-height 1.6em
+
+h1
+  font-family $headline-font
+  font-size 38px
+
+h2
+  font-family $subheadline-font
+  font-size 20px
+  padding-top 15px
+
+p
+  font-family $body-font
+  font-size 16px
+  line-height 1.6em
+  padding 20px 0
+  color $slate
+
+a
+  text-decoration none
+  color $slate
+  border-bottom 2px solid $slate
+  padding-bottom 1px
+
+  &:link, &:visited
+    text-decoration none
+
+  &:hover
+    border-bottom 2px solid $drop
+
+ul, .header, .links
+  a
+    @extends a
+    border-bottom 2px solid transparent
+
+    &:hover
+      border-bottom 2px solid transparent
+
+img
+  width 100%
+  height auto
+  padding 20px 0
+
+strong
+  font-weight bold
+
+em
+  font-style: italic
+
+input
+  display block
+  background transparent
+  border 3px solid $ruben
+  outline none
+
+#top, #bottom, #left, #right
+  background $slate
+  position fixed
+
+#left, #right
+  top 0
+  bottom 0
+  width 20px
+
+#left
+  left 0
+
+#right
+  right 0
+
+#top, #bottom
+  left 0
+  right 0
+  height 20px
+
+#top
+  top 0
+
+#bottom
+  bottom 0
