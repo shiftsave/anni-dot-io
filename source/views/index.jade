@@ -2,9 +2,6 @@ doctype html
 html(lang="en")
   head
     title= pageTitle
-    
-    script(src='assets/js/vendor.min.js')
-    script(src='assets/js/main.js')
     link(href='assets/css/main.css', rel='stylesheet')
     
   body
@@ -23,9 +20,16 @@ html(lang="en")
           h2 A new platform that provides animators with the tools they need to manage, deliver and review their work.
           p Sign up to reserve a spot in our Preview Release.
           
-          a(href='#' class ="primary-button") 
-            p.top Sign up
+          button(class="primary-button" data-signup) 
+            .top Sign up
             .bottom
         
         .block.right
           img(src="assets/images/temp-hero.png" class="hero-image")
+
+      include ./partials/signup-form
+
+    script(src='assets/js/vendor.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js')
+    script(src='assets/js/main.js')
