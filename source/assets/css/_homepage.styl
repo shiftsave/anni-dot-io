@@ -16,6 +16,7 @@ body
 
 .content
   margin-top 160px
+  overflow hidden
 
 .block
   column(1, cycle: 1, gutter: 0)
@@ -28,9 +29,20 @@ body
       max-width 620px
 
 .primary-button
+  cursor pointer
+  font-family $body-font
+  font-size 16px
+  display block
+  background none
+  border none
+  margin 0
+  padding 0
   position relative
   text-align center
   width 140px
+  
+  &:focus
+    outline 0
 
   &:hover
     .top

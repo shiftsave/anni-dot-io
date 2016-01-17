@@ -1,0 +1,68 @@
+.cover
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  width 100%
+  height 100%
+  
+.signup-form__overlay-screen
+  @extends .cover
+  z-index 2
+  background rgba(black, .7)
+  
+  
+.signup-form
+  @extends .cover
+  z-index 3
+  margin auto
+  background white
+  border 2px solid black
+  padding 1rem
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  transform translateY(200%)
+  
+  +above($desktop)
+    width 600px
+    height 350px
+  
+  .primary-button
+    width 300px
+    .top, .bottom
+      width 300px
+
+.signup-form__footer
+  padding .5rem 0 1rem
+
+.signup-form__success
+  padding-left 1rem
+  padding-right 1rem
+  max-width 320px
+  margin-left auto
+  margin-right auto
+
+.signup-form__cancel
+  position absolute
+  top 1rem 
+  right 1rem
+  background none
+  border none
+  font-size 2rem
+  cursor pointer
+  &:focus
+    outline 0
+
+.form-input
+  font-size 16px
+  box-shadow none
+  border 2px solid black
+  line-height 2rem
+  margin-bottom .5rem
+  padding 0 .5rem
+  width 300px
+  
+  
