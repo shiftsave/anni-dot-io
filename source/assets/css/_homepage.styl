@@ -3,68 +3,96 @@
 --------------------------------------------- */
 
 body
-  padding 100px 100px
+  padding 80px 0
+  position relative
+
+.initial-state
+  top 30px
+  opacity 0
 
 .container
-  max-width 1200px
   margin 0 auto
+  position relative
 
 .header
+  position relative
+  margin-bottom 100px
+  @extend .initial-state
+
   img
-    width 45px
+    display block
+    width 80px
     height auto
+    margin 0 auto
+
+.hero_content
+  position relative
+  margin-top 120px
+  overflow hidden
+  margin 0 auto
 
 .content
-  margin-top 160px
-  overflow hidden
+  max-width 620px
+  margin 0 auto
 
-.block
-  column(1, cycle: 1, gutter: 0)
-
-  +above($desktop)
-    column(1/2, uncycle: 1, cycle: 2, gutter: 10)
-
-  .right
-    .hero-image
-      max-width 620px
-
-.primary-button
-  cursor pointer
-  font-family $body-font
+  p
+    text-align center
+    padding 0 60px
+.cta
+  font-family $subheadline-font
   font-size 16px
-  display block
-  background none
-  border none
-  margin 0
-  padding 0
+  margin-top 70px
+
+.video_content
+  margin 120px 0
+  width 100%
+  padding 40px 0 0 0
+  background $light
   position relative
-  text-align center
-  width 140px
-  
-  &:focus
-    outline 0
 
-  &:hover
-    .top
-      transform translate(0,-1px)
+  .video
+    max-width 900px
+    display block
+    margin 0 auto
+    padding 0 40px
 
-  &:active
-    .top
-      transition all 60ms $ease
-      transform translate(0, 4px)
+.feature_content
+  position relative
+  width 100%
+  margin 160px 0
+  clear both
 
-  .top
-    width 160px
-    background white
-    padding 6px
-    border 2px solid $slate
-    transition all 250ms $ease
-    transform translate(0, 2px)
+.column
+  position relative
+  margin 0 180px
 
-  .bottom
-    position absolute
-    margin-top -2px
-    width 160px
-    height 10px
-    border 2px solid $slate
-    border-top none
+  .text_left
+    padding 60px
+    max-width 600px
+    float right
+
+  .text_right
+    padding 60px
+    max-width 600px
+    float left
+
+  .image
+    max-width 580px
+
+  column(1, cycle: 1, gutter: 1)
+  padding-bottom 80px
+
+  +above($tablet)
+    column(1/2, cycle: 2, gutter: 5, uncycle: 1)
+
+.signup_content
+  clear both
+  padding 80px 0
+  position relative
+  overflow hidden
+  margin 0 auto
+  background $light
+
+.footer
+  img
+    width 60px
