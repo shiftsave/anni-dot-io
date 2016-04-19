@@ -1,3 +1,26 @@
 
 /* Navigation
 --------------------------------------------- */
+
+.header
+  margin-top 10px
+  position relative
+  @extend .initial-state
+  margin-bottom 20px
+
+  +above($sm-phone)
+    margin-top 30px
+    margin-bottom 40px
+
+  +above($phone)
+    margin-top 40px
+    margin-bottom 100px
+
+  img
+    display block
+    width 50px
+    height auto
+    margin 0 auto
+
+    +above($sm-phone)
+      width 65px

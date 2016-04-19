@@ -1,23 +1,27 @@
 .signup-form
-  padding 20px
+  padding 20px 10px
   align-items center
   position relative
-  left 40px
   margin-top 20px
 
+  +above($sm-phone)
+    padding 20px 10px
+
   .fields
-    float left
-    height 45px
+    width 500px
+    margin 0 auto
 
     .left
-      float left
       width 210px
       margin 0 6px
+      +above($phone)
+        float left
 
     .right
-      float right
       width: 210px
       margin 0 6px
+      +above($phone)
+        float left
 
 .submit-button
   line-height 1
@@ -29,9 +33,18 @@
   background white
   cursor pointer
   display block
-  width 40px
-  height 40px
+  width 55px
+  height 55px
   transition all 600ms $bounce
+  position absolute
+  right 5px
+  top 50px
+
+  +above($phone)
+    width 40px
+    height 40px
+    right 60px
+    top 20px
 
   &:hover
     border-color $copper
@@ -43,6 +56,10 @@
   .arrow
     top 0
     margin -14px 0 0 2px
+    padding 7px
+
+    +above($phone)
+      padding 0
 
 .signup-form__success
   padding-left 1rem
@@ -52,7 +69,7 @@
   margin-right auto
 
 .form-input
-  font-size 16px
+  font-size 14px
   font-family $body-font
   box-shadow none
   border none
@@ -61,6 +78,9 @@
   margin-bottom .5rem
   width 100%
   color $wash
+
+  +above($phone)
+    font-size 16px
 
 input:focus
   color $slate

@@ -18,13 +18,19 @@ body
 h1, h2, h3, h4, h5
   color $slate
   font-family $headline-font
-  line-height 1.5em
+  line-height 1.3em
   text-transform uppercase
   color $slate
   text-align center
 
 h1
-  font-size 42px
+  font-size 30px
+
+  +above($sm-phone)
+    font-size 34px
+
+  +above($phone)
+    font-size 48px
 
 h2
   font-size 32px
@@ -43,13 +49,32 @@ h4
 
 p
   font-family $body-font
-  font-size 15px
+  font-size 14px
   line-height 1.6em
   color $slate
+  text-align center
+
+  +above($sm-phone)
+    font-size 15px
 
 .lead
-  font-size 16px
+  font-size 14px
   padding 0
+
+  +above($sm-phone)
+    font-size 16px
+
+.cta
+  font-family $subheadline-font
+  font-size 14px
+  margin-top 20px
+
+  +above($sm-phone)
+    margin 30px 30px 0 30px
+    font-size 16px
+
+  +above($tablet)
+    margin-top 50px
 
 a
   text-decoration none
