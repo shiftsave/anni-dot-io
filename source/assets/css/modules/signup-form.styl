@@ -8,20 +8,31 @@
     padding 20px 10px
 
   .fields
-    width 500px
+    width 100%
     margin 0 auto
 
+    +above($phablet)
+      width 500px
+
     .left
-      width 210px
+      width 100%
+      padding-right 100px
       margin 0 6px
-      +above($phone)
+
+      +above($phablet)
+        padding 0
         float left
+        width 210px
 
     .right
-      width: 210px
+      width 100%
       margin 0 6px
-      +above($phone)
+      padding-right 100px
+
+      +above($phablet)
+        padding 0
         float left
+        width 210px
 
 .submit-button
   line-height 1
@@ -40,7 +51,7 @@
   right 5px
   top 50px
 
-  +above($phone)
+  +above($phablet)
     width 40px
     height 40px
     right 60px
@@ -58,7 +69,7 @@
     margin -14px 0 0 2px
     padding 7px
 
-    +above($phone)
+    +above($phablet)
       padding 0
 
 .signup-form__success
@@ -79,7 +90,7 @@
   width 100%
   color $wash
 
-  +above($phone)
+  +above($phablet)
     font-size 16px
 
 input:focus

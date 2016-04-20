@@ -7,12 +7,16 @@
   position relative
   @extend .initial-state
   margin-bottom 20px
+  transition all 600ms $expo
 
   +above($sm-phone)
     margin-top 30px
     margin-bottom 40px
 
   +above($phone)
+    margin-bottom 80px
+
+  +above($desktop)
     margin-top 40px
     margin-bottom 100px
 
