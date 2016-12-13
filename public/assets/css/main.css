@@ -180,9 +180,11 @@ a.symbol:before margin-right 0.3em {
   font-size: 130%;
 }
 html {
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
 }
 *,
 *:before,
@@ -203,7 +205,6 @@ h5 {
   font-family: 'Reglo-Bold', sans-serif;
   line-height: 1.3em;
   text-transform: uppercase;
-  color: #000;
   text-align: center;
 }
 h1 {
@@ -224,21 +225,21 @@ h2 {
   text-align: left;
 }
 h3 {
-  font-size: 26px;
   color: #000;
+  font-size: 26px;
   padding: 60px 0;
 }
 h4 {
-  font-size: 20px;
   color: #e2a480;
-  text-align: left;
+  font-size: 20px;
   padding-top: 30px;
+  text-align: left;
 }
 p {
+  color: #000;
   font-family: 'WorkSans-Regular', sans-serif;
   font-size: 14px;
   line-height: 1.6em;
-  color: #000;
   text-align: center;
 }
 @media screen and (min-width: 340px) {
@@ -262,8 +263,8 @@ p {
 }
 @media screen and (min-width: 340px) {
   .cta {
-    margin: 30px 30px 0 30px;
     font-size: 16px;
+    margin: 30px 30px 0 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -275,10 +276,10 @@ a,
 ul a,
 .header a,
 .links a {
-  text-decoration: none;
-  color: #000;
   border-bottom: 2px solid #000;
+  color: #000;
   padding-bottom: 1px;
+  text-decoration: none;
 }
 a:link,
 ul a:link,
@@ -307,9 +308,9 @@ ul a:hover,
   border-bottom: 2px solid transparent;
 }
 img {
-  width: 100%;
   height: auto;
   padding: 20px 0;
+  width: 100%;
 }
 strong {
   font-weight: bold;
@@ -318,10 +319,10 @@ em {
   font-style: italic;
 }
 input {
-  display: block;
   background: transparent;
   border: 3px solid $ruben;
-  outline: none;
+  display: block;
+  outline: 0;
 }
 #top,
 #bottom,
@@ -332,8 +333,8 @@ input {
 }
 #left,
 #right {
-  top: 0;
   bottom: 0;
+  top: 0;
   width: 20px;
 }
 #left {
@@ -344,9 +345,9 @@ input {
 }
 #top,
 #bottom {
+  height: 20px;
   left: 0;
   right: 0;
-  height: 20px;
 }
 #top {
   top: 0;
@@ -355,9 +356,9 @@ input {
   bottom: 0;
 }
 .hidden-from-view {
-  visibility: hidden;
   height: 0;
   overflow: hidden;
+  visibility: hidden;
 }
 body {
   position: relative;
@@ -365,14 +366,13 @@ body {
 .initial-state,
 .header {
   top: 30px;
-  opacity: 0;
 }
 .container {
-  margin: 0 auto;
-  position: relative;
   height: 100vh;
+  margin: 0 auto;
   overflow: hidden;
   padding: 0;
+  position: relative;
 }
 @media screen and (min-width: 340px) {
   .container {
@@ -386,10 +386,9 @@ body {
   }
 }
 .hero_content {
-  position: relative;
+  margin: 0 auto;
   margin-top: 120px;
   overflow: hidden;
-  margin: 0 auto;
   padding: 0 15px;
   z-index: 100;
 }
@@ -399,8 +398,8 @@ body {
   }
 }
 .hero_content h1 {
-  max-width: 540px;
   margin: 0 auto;
+  max-width: 540px;
 }
 .hero_content .lead {
   margin: 0 auto;
@@ -412,27 +411,27 @@ body {
   }
 }
 .content {
-  max-width: 620px;
   margin: 0 auto;
+  max-width: 620px;
 }
 .video_content {
-  width: 100%;
-  overflow: hidden;
   background: #f8f8f8;
-  position: absolute;
-  padding: 20px 0 0 0;
   bottom: -10px;
+  overflow: hidden;
+  padding: 20px 0 0 0;
+  position: absolute;
+  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .video_content {
-    padding: 60px 0 0 0;
     bottom: -110px;
+    padding: 60px 0 0 0;
   }
 }
 .video_content .video {
-  max-width: 900px;
   display: block;
   margin: 0 auto;
+  max-width: 900px;
   padding: 0 20px;
 }
 @media screen and (min-width: 480px) {
@@ -441,14 +440,14 @@ body {
   }
 }
 .feature_content {
+  clear: both;
+  margin: 160px 0;
   position: relative;
   width: 100%;
-  margin: 160px 0;
-  clear: both;
 }
 .column {
-  position: relative;
   margin: 0 180px;
+  position: relative;
   *zoom: 1;
   float: left;
   clear: none;
@@ -459,14 +458,14 @@ body {
   padding-bottom: 80px;
 }
 .column .text_left {
-  padding: 60px;
-  max-width: 600px;
   float: right;
+  max-width: 600px;
+  padding: 60px;
 }
 .column .text_right {
-  padding: 60px;
-  max-width: 600px;
   float: left;
+  max-width: 600px;
+  padding: 60px;
 }
 .column .image {
   max-width: 580px;
@@ -520,20 +519,20 @@ body {
   }
 }
 .signup_content {
+  background: #f8f8f8;
   clear: both;
+  margin: 0 auto;
+  overflow: hidden;
   padding: 80px 0;
   position: relative;
-  overflow: hidden;
-  margin: 0 auto;
-  background: #f8f8f8;
 }
 .footer img {
   width: 60px;
 }
 .header {
+  margin-bottom: 20px;
   margin-top: 10px;
   position: relative;
-  margin-bottom: 20px;
   transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
   -webkit-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
   -moz-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
@@ -542,8 +541,8 @@ body {
 }
 @media screen and (min-width: 340px) {
   .header {
-    margin-top: 30px;
     margin-bottom: 40px;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -553,15 +552,15 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .header {
-    margin-top: 40px;
     margin-bottom: 100px;
+    margin-top: 40px;
   }
 }
 .header img {
   display: block;
-  width: 50px;
   height: auto;
   margin: 0 auto;
+  width: 50px;
 }
 @media screen and (min-width: 340px) {
   .header img {
@@ -571,7 +570,6 @@ body {
 .signup-form {
   padding: 20px 10px;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   position: relative;

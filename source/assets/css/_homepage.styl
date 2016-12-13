@@ -7,14 +7,13 @@ body
 
 .initial-state
   top 30px
-  opacity 0
 
 .container
-  margin 0 auto
-  position relative
   height 100vh
+  margin 0 auto
   overflow hidden
   padding 0
+  position relative
 
   +above($sm-phone)
     padding 0
@@ -25,10 +24,9 @@ body
 
 
 .hero_content
-  position relative
+  margin 0 auto
   margin-top 120px
   overflow hidden
-  margin 0 auto
   padding 0 15px
   z-index 100
 
@@ -36,8 +34,8 @@ body
     padding 10px
 
   h1
-    max-width 540px
     margin 0 auto
+    max-width 540px
 
   .lead
     margin 0 auto
@@ -47,49 +45,49 @@ body
       max-width 460px
 
 .content
-  max-width 620px
   margin 0 auto
+  max-width 620px
 
 .video_content
-  width 100%
-  overflow hidden
   background $light
-  position absolute
-  padding 20px 0 0 0
   bottom -10px
+  overflow hidden
+  padding 20px 0 0 0
+  position absolute
+  width 100%
 
   +above($phone)
-    padding 60px 0 0 0
     bottom -110px
+    padding 60px 0 0 0
 
   .video
-    max-width 900px
     display block
     margin 0 auto
+    max-width 900px
     padding 0 20px
 
     +above($phone)
       padding 0 40px
 
 .feature_content
+  clear both
+  margin 160px 0
   position relative
   width 100%
-  margin 160px 0
-  clear both
 
 .column
-  position relative
   margin 0 180px
+  position relative
 
   .text_left
-    padding 60px
-    max-width 600px
     float right
+    max-width 600px
+    padding 60px
 
   .text_right
-    padding 60px
-    max-width 600px
     float left
+    max-width 600px
+    padding 60px
 
   .image
     max-width 580px
@@ -101,12 +99,12 @@ body
     column(1/2, cycle: 2, gutter: 5, uncycle: 1)
 
 .signup_content
+  background $light
   clear both
+  margin 0 auto
+  overflow hidden
   padding 80px 0
   position relative
-  overflow hidden
-  margin 0 auto
-  background $light
 
 .footer
   img

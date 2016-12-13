@@ -3,9 +3,9 @@
 --------------------------------------------- */
 
 html
-  -webkit-text-size-adjust 100%
-  -webkit-font-smoothing: antialiased
   box-sizing border-box
+  font-smoothing antialiased
+  text-size-adjust 100%
 
 *, *:before, *:after
   box-sizing inherit
@@ -20,7 +20,6 @@ h1, h2, h3, h4, h5
   font-family $headline-font
   line-height 1.3em
   text-transform uppercase
-  color $slate
   text-align center
 
 h1
@@ -37,21 +36,21 @@ h2
   text-align left
 
 h3
-  font-size 26px
   color $slate
+  font-size 26px
   padding 60px 0
 
 h4
-  font-size 20px
   color $copper
-  text-align left
+  font-size 20px
   padding-top 30px
+  text-align left
 
 p
+  color $slate
   font-family $body-font
   font-size 14px
   line-height 1.6em
-  color $slate
   text-align center
 
   +above($sm-phone)
@@ -70,17 +69,17 @@ p
   margin-top 20px
 
   +above($sm-phone)
-    margin 30px 30px 0 30px
     font-size 16px
+    margin 30px 30px 0 30px
 
   +above($tablet)
     margin-top 50px
 
 a
-  text-decoration none
-  color $slate
   border-bottom 2px solid $slate
+  color $slate
   padding-bottom 1px
+  text-decoration none
 
   &:link, &:visited
     text-decoration none
@@ -97,29 +96,29 @@ ul, .header, .links
       border-bottom 2px solid transparent
 
 img
-  width 100%
   height auto
   padding 20px 0
+  width 100%
 
 strong
   font-weight bold
 
 em
-  font-style: italic
+  font-style italic
 
 input
-  display block
   background transparent
   border 3px solid $ruben
-  outline none
+  display block
+  outline 0
 
 #top, #bottom, #left, #right
   background $slate
   position fixed
 
 #left, #right
-  top 0
   bottom 0
+  top 0
   width 20px
 
 #left
@@ -129,9 +128,9 @@ input
   right 0
 
 #top, #bottom
+  height 20px
   left 0
   right 0
-  height 20px
 
 #top
   top 0
